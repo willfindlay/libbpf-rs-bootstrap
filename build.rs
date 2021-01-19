@@ -28,6 +28,7 @@ fn main() {
     // TODO: This command can be allowed to fail if we already have an existing vmlinux.h
     let status = Command::new("make")
         .arg("vmlinux")
+        .current_dir("src/bpf")
         .status()
         .expect("Failed to run make");
     assert!(status.success(), "Failed to update vmlinux.h");

@@ -7,4 +7,4 @@ $(VMLINUX):
 	bpftool btf dump file /sys/kernel/btf/vmlinux format c > $(VMLINUX)
 
 vmlinux.h: $(VMLINUX)
-	ln -snfr $(VMLINUX) src/bpf/vmlinux.h
+	ln -snfr $(VMLINUX) vmlinux.h
