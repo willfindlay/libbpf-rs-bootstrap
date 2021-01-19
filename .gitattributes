@@ -1,0 +1,2 @@
+src/bpf/vmlinux* linguist-generated
+src/bindings/bindings.rs linguist-generated

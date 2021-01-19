@@ -1,0 +1,15 @@
+[package]
+name = "project-name"
+version = "0.1.0"
+authors = ["William Findlay <william@williamfindlay.com>"]
+edition = "2018"
+
+[dependencies]
+libbpf-rs = "0.6.2"
+anyhow = "1.0.38"
+clap = "2.33.3"
+bitflags = "1.2.1"
+pod = "0.5.0"
+
+[build-dependencies]
+bindgen = "0.56.0"
