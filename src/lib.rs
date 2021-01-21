@@ -6,3 +6,6 @@
 
 pub mod bindings;
 pub mod bpf;
+mod utils;
+
+pub use utils::bump_memlock_rlimit;

@@ -339,6 +339,7 @@ dependencies = [
  "bitflags",
  "clap",
  "libbpf-rs",
+ "libc",
  "pod",
 ]
 
