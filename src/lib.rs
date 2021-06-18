@@ -4,8 +4,5 @@
 //
 // Jan. 19, 2021  William Findlay  Created this.
 
-pub mod bindings;
-pub mod bpf;
-mod utils;
-
-pub use utils::bump_memlock_rlimit;
+mod bindings;
+mod bpf;

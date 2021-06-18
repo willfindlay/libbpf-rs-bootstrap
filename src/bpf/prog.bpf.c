@@ -4,9 +4,13 @@
 //
 // Jan. 19, 2021  William Findlay  Created this.
 
-#include "vmlinux.h"
-#include "helpers.h"
-#include "shared.h"
+// This must be first
+#include <vmlinux.h>
+
+// These must be below vmlinux.h
+#include <bpf/bpf_core_read.h> /* for BPF CO-RE helpers */
+#include <bpf/bpf_helpers.h> /* most used helpers: SEC, __always_inline, etc */
+#include <bpf/bpf_tracing.h> /* for getting kprobe arguments */
 
 /* ========================================================================= *
  * BPF CO-RE Globals                                                         *

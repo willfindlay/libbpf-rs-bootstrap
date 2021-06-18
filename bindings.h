@@ -4,6 +4,4 @@
 //
 // Jan. 19, 2021  William Findlay  Created this.
 
-#include "src/bpf/shared.h"
-
 // TODO: Include your bindings here
